@@ -7,12 +7,12 @@ import org.testng.ITestResult;
 public class MyTestListener implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println("start "+result.getMethod().getMethodName()+" ****");
+        System.out.println("start "+result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        System.out.println("++++++WIN+++++++");
+        System.out.println("++++++Passed+++++++");
     }
 
     @Override
