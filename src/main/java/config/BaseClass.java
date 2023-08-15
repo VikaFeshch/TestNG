@@ -9,11 +9,11 @@ public class BaseClass {
     @BeforeClass
     public void create(){
         driver=ConfigurationWebDriver.createDriver(WebDrivers.BONYGARSIA);
-        }
+    }
 
-        @AfterClass
+    @AfterClass
     public void aftCl() throws InterruptedException {
         Thread.sleep(5000);
         driver.quit();
-        }
+    }
 }

@@ -31,8 +31,8 @@ public class TestHillelHWw20 extends BaseClass {
         certPage.inputNumCert(num);
         certPage.clButCheck();
         switch (bool){
-            case "true" ->Assert.assertTrue(certPage.checkcertifChekForm());
-            case "false" ->Assert.assertFalse(certPage.checkcertifChekForm());
+            case "true" : Assert.assertTrue(certPage.checkcertifChekForm());break;
+            case "false" : Assert.assertFalse(certPage.checkcertifChekForm());break;
         }
     }
 }
